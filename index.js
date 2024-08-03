@@ -8,7 +8,9 @@ const todoRouter = require("./routes/todos");
 const cors = require("cors");
 app.use(cors());
 
-connectMongoDB("mongodb://127.0.0.1:27017/mernstacktask")
+connectMongoDB(
+  "mongodb+srv://mahammadanif22:i49GaybiQVNPYrWy@node.yyq3uaq.mongodb.net/?retryWrites=true&w=majority&appName=node"
+)
   .then(() => {
     console.log("mongodb connected");
   })
